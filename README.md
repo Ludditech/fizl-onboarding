@@ -25,6 +25,6 @@ This project aims to provide a practical guide for enriching user experience by 
 
 [^1]: Article in English: [Implementing Live Activities in React-Native with Expo](https://fizl.io/en/blog/posts/live-activities)
 [^2]: Article in French: [Implémenter des Live Activities en React-Native avec Expo](https://fizl.io/fr/blog/posts/live-activities)
-[^3]: Expo: [Apps with React that run on Android, iOS, and the web](https://github.com/expo)
+[^3]: Expo: [Apps with React that run on Android, iOS, and the web](https://docs.expo.dev/)
 [^4]: MaskedView: [React component that renders a masked view](https://github.com/react-native-masked-view/masked-view)
 
