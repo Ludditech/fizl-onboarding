@@ -3,7 +3,7 @@ import { Alert, Dimensions, StyleSheet, View } from "react-native";
 import MaskedView from "@react-native-masked-view/masked-view";
 import { Card1, Card2 } from "./components/Cards";
 import { Content } from "./components/Content";
-import { Focus1, Focus2 } from "./components/Focus";
+import { Mask1, Mask2 } from "./components/Masks";
 import { Background1, Background2 } from "./components/Backgrounds";
 
 const { width, height } = Dimensions.get("window");
@@ -24,8 +24,8 @@ export default function App() {
       <MaskedView
         maskElement={
           <View style={styles.frameWrapper}>
-            {index === 0 && <Focus1 />}
-            {index === 1 && <Focus2 />}
+            {index === 0 && <Mask1 />}
+            {index === 1 && <Mask2 />}
           </View>
         }
         style={styles.maskContainer}

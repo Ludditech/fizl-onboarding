@@ -1,11 +1,11 @@
 import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Alert } from "react-native";
-import { focusStyles } from "../styles/focus";
+import { masksStyles } from "../styles/masks";
 
 export function Content() {
   return (
     <View style={styles.container}>
-      <View style={focusStyles.focus2}>
+      <View style={masksStyles.mask2}>
         <Text style={styles.text}>
           Now that we have the focus, you can press the "Focus 2" button.
         </Text>
@@ -14,7 +14,7 @@ export function Content() {
         </TouchableOpacity>
       </View>
       <TouchableOpacity
-        style={focusStyles.focus1}
+        style={masksStyles.mask1}
         activeOpacity={0.8}
         onPress={() => Alert.alert("Focus 1")}
       >

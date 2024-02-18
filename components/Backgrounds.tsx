@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { Focus2, Focus1 } from "./Focus";
+import { Mask2, Mask1 } from "./Masks";
 import {
-  FOCUS1_HEIGHT,
-  FOCUS1_RIGHT,
-  FOCUS1_BOTTOM,
-  FOCUS2_TOP,
-} from "../styles/focus";
+  MASK1_HEIGHT,
+  MASK1_RIGHT,
+  MASK1_BOTTOM,
+  MASK2_TOP,
+} from "../styles/masks";
 
 export function Background1({ onPress }: { onPress: () => void }) {
   return (
@@ -22,23 +22,23 @@ export function Background1({ onPress }: { onPress: () => void }) {
           onPress={onPress}
           style={{
             flex: 1,
-            height: FOCUS1_HEIGHT,
+            height: MASK1_HEIGHT,
           }}
         />
-        <Focus1 style={{ position: "relative", opacity: 0 }} />
+        <Mask1 style={{ position: "relative", opacity: 0 }} />
         <TouchableOpacity
           activeOpacity={1}
           onPress={onPress}
           style={{
-            height: FOCUS1_HEIGHT,
-            width: FOCUS1_RIGHT,
+            height: MASK1_HEIGHT,
+            width: MASK1_RIGHT,
           }}
         />
       </View>
       <TouchableOpacity
         activeOpacity={1}
         onPress={onPress}
-        style={{ height: FOCUS1_BOTTOM }}
+        style={{ height: MASK1_BOTTOM }}
       />
     </View>
   );
@@ -50,9 +50,9 @@ export function Background2({ onPress }: { onPress: () => void }) {
       <TouchableOpacity
         activeOpacity={1}
         onPress={onPress}
-        style={{ height: FOCUS2_TOP }}
+        style={{ height: MASK2_TOP }}
       />
-      <Focus2 style={{ position: "relative", opacity: 0 }} />
+      <Mask2 style={{ position: "relative", opacity: 0 }} />
       <TouchableOpacity
         activeOpacity={1}
         onPress={onPress}

@@ -9,11 +9,11 @@ import {
   ViewStyle,
 } from "react-native";
 import {
-  FOCUS1_BOTTOM,
-  FOCUS1_HEIGHT,
-  FOCUS2_HEIGHT,
-  FOCUS2_TOP,
-} from "../styles/focus";
+  MASK1_BOTTOM,
+  MASK1_HEIGHT,
+  MASK2_HEIGHT,
+  MASK2_TOP,
+} from "../styles/masks";
 
 const { width } = Dimensions.get("window");
 const OFFSET = 10;
@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
   },
   card1: {
     position: "absolute",
-    bottom: FOCUS1_BOTTOM + FOCUS1_HEIGHT + OFFSET,
+    bottom: MASK1_BOTTOM + MASK1_HEIGHT + OFFSET,
     alignSelf: "center",
   },
   card2: {
     top: 0,
     alignSelf: "center",
     position: "absolute",
-    marginTop: FOCUS2_TOP + FOCUS2_HEIGHT + OFFSET,
+    marginTop: MASK2_TOP + MASK2_HEIGHT + OFFSET,
   },
 });
