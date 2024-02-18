@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Alert, Dimensions, StyleSheet, View } from "react-native";
-import MaskedView from "@react-native-masked-view/masked-view";
+import RNMaskedView from "@react-native-masked-view/masked-view";
 import { Card1, Card2 } from "./components/Cards";
 import { Content } from "./components/Content";
 import { Mask1, Mask2 } from "./components/Masks";
@@ -19,9 +19,9 @@ export default function App() {
     Alert.alert("Background pressed!");
   }
 
-  function MaskedViewFrame() {
+  function MaskedView() {
     return (
-      <MaskedView
+      <RNMaskedView
         style={styles.container}
         maskElement={
           <View style={styles.masks}>
@@ -33,13 +33,13 @@ export default function App() {
         <Content />
         {index === 0 && <Background1 onPress={onBackgroundPress} />}
         {index === 1 && <Background2 onPress={onBackgroundPress} />}
-      </MaskedView>
+      </RNMaskedView>
     );
   }
 
   return (
     <View style={styles.layout}>
-      <MaskedViewFrame />
+      <MaskedView />
       {index === 0 && <Card1 onNext={handleNext} />}
       {index === 1 && <Card2 onNext={handleNext} />}
     </View>
