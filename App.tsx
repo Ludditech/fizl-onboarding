@@ -22,13 +22,13 @@ export default function App() {
   function MaskedViewFrame() {
     return (
       <MaskedView
+        style={styles.container}
         maskElement={
-          <View style={styles.frameWrapper}>
+          <View style={styles.masks}>
             {index === 0 && <Mask1 />}
             {index === 1 && <Mask2 />}
           </View>
         }
-        style={styles.maskContainer}
       >
         <Content />
         {index === 0 && <Background1 onPress={onBackgroundPress} />}
@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#000",
   },
-  frameWrapper: {
+  container: {
+    backgroundColor: "#000000",
+    flex: 1,
+  },
+  masks: {
     flex: 1,
     backgroundColor: "#00000050",
     width,
     height,
-  },
-  maskContainer: {
-    backgroundColor: "#000000",
-    flex: 1,
   },
 });
